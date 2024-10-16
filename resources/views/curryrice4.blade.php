@@ -14,10 +14,12 @@
     </div>
     
     <style>
-        .width {max-width: 800px;
+        .width {
+            max-width: 800px;
             margin: auto;
         }
-     .t1{ text-align: center;
+        
+        .t1{ text-align: center;
           border: 1px solid black;
         }
     </style>
