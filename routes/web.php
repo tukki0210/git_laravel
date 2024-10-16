@@ -29,3 +29,8 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/curry4', function () {
+    return view('curryrice4');
+});
