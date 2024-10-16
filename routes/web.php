@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/niku',function(){
+    return view('niku');
+});
 
 Route::get('tonjiru16', [TonjiruController::class, 'index'])->name('tonjiru.index');
 
