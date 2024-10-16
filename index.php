@@ -2,4 +2,5 @@
 <p>git登録できない</p>
 <p>なぜ設定なしでmainとつながるの？
     clonだから？</p>
-    <p>httpsをコピーしてclonを作ったからgithubとつながっている</p>
+<p>httpsをコピーしてclonを作ったからgithubとつながっている</p>
+<p>pushがうまくいかないのはなぜ</p>
