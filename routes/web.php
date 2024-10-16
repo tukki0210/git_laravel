@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KarageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/karage', function(){
+    return view('karage');
 });
 
 Route::get('/dashboard', function () {
