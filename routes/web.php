@@ -23,6 +23,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/omuraisu20', function () {
+    return view('welcome');
+});
 
 Route::get('/gyoza01', function () {
     return view('welcome');
