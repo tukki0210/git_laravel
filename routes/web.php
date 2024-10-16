@@ -20,6 +20,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/gyoza01', function () {
+    return view('welcome');
+});
+
+
 Route::get('/karage', function(){
     return view('karage');
 });
