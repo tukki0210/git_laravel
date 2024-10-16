@@ -1,5 +1,4 @@
 <?php
- use App\Http\Controllers\TonjiruController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('tonjiru16', [TonjiruController::class, 'index'])->name('tonjiru.index');
+Route::get('/tonjiru', function () {
+    return view('tonjiru.index');
+});
 
 Route::get('/', function () {
     return view('welcome');
