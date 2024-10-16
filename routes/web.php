@@ -1,5 +1,5 @@
 <?php
-
+ use App\Http\Controllers\TonjiruController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/niku',function(){
+    return view('niku');
+});
+
+Route::get('tonjiru16', [TonjiruController::class, 'index'])->name('tonjiru.index');
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,6 +25,15 @@ Route::get('/', function () {
 
 Route::get('/omuraisu20', function () {
     return view('welcome');
+});
+
+Route::get('/gyoza01', function () {
+    return view('welcome');
+});
+
+
+Route::get('/karage', function(){
+    return view('karage');
 });
 
 Route::get('/dashboard', function () {
